@@ -1,4 +1,4 @@
-import React, { Component, PropTypes } from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import shouldPureComponentUpdate from 'react-pure-render/function';
 
@@ -127,13 +127,6 @@ class RenderLog extends Component {
     count: 1,
     node: null
   };
-  static propTypes = {
-    log: PropTypes.instanceOf(Array),
-    count: PropTypes.number,
-    node: PropTypes.object,
-    posTop: PropTypes.number,
-    posLeft: PropTypes.number
-  };
 
   state = {
     showDetails: false
@@ -209,10 +202,6 @@ class RenderLog extends Component {
 
 class RenderLogs extends Component {
   static displayName = 'RenderLogs';
-
-  static propTypes = {
-    renders: PropTypes.object
-  };
 
   render () {
     const renderLogs = [];
