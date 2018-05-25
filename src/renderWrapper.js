@@ -23,7 +23,6 @@ const RenderVisualizer = {
       top: 0,
       left: 0,
       maxWidth: '70%',
-      padding: '5px 5px',
       zIndex: '10000',
       transition: '.3s all'
     },
